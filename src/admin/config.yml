@@ -34,7 +34,7 @@ collections:
         file: "src/_data/gallery.yaml"
         fields:
           - label: Gallery Items
-            name: gallery
+            name: "items"
             widget: list
             collapsed: false
             fields:
