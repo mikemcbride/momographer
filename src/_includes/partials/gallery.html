@@ -2,7 +2,7 @@
 <div class="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 my-8 px-4 lg:mx-0">
     {% if gallery.items %}
         {% for item in gallery.items %}
-            <img loading="lazy" class="pointer-events-none aspect-square object-cover" src="/static/img/{{item.src}}">
+            <img loading="lazy" class="pointer-events-none aspect-square object-cover object-top" src="/static/img/{{item.src}}">
         {% endfor %}
     {% endif %}
 </div>
