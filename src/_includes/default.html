@@ -12,14 +12,13 @@
     {% endif %}
     {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
-    {% if prism == true %}
-      <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
-    {% endif %}
   </head>
-  <body>
+  <body class="min-h-screen flex flex-col font-serif">
     {% include "./partials/navbar.html" %}
 
-    {{ content | safe }}
+    <main class="container mx-auto flex-grow">
+      {{ content | safe }}
+    </main>
 
     {% include "./partials/footer.html" %}
 
