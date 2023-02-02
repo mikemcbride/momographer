@@ -38,7 +38,6 @@ collections:
             widget: list
             collapsed: false
             fields:
-              - { label: Title, name: title, widget: string }
               - { label: URL, name: src, widget: string }
       - label: "Meta Settings"
         name: "settings"
